@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link your CSS file to your index.html -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Dilon learning repo</title>
+</head>
+<body>
+    
+<!-- Headings -->
+<h1>This is a heading</h1>
+<h2>This is a heading</h2>
+<h3>This is a heading</h3>
+<h4>This is a heading</h4>
+<h5>This is a heading</h5>
+<h6>This is a heading</h6>
+
+<!-- Paragraph -->
+<p>This is a paragraph</p>
+
+<!-- Use div to be the container for your content -->
+<div>
+    <h1>Dilon Everitt</h1>
+    <p>Economics Graduate (Honours)</p>
+</div>
+
+<!-- Use classes to style content -->
+<div class="class1">
+    <h1>This is a styled heading</h1>
+</div>
+
+
+
+<!-- STYLING -->
+
+<!-- you can apply styling by having a 'styles.css' file and link it to the index.html
+    or you can do styling in the index.html (see below for example) -->
+    <style>
+
+        .class1 {
+            color: "purple"
+        }
+    </style>
+
+
+
+<!-- FLEXBOX -->
+
+<!-- When using FLEXBOX, make sure to apply 'flex' to the parent container (look at example below) -->
+<div class="parent-container">
+    <div class="container-item">
+        <img src="logo.png">
+    </div>
+</div>
+
+<style>
+    .parent-container {
+        /* this is how you set 'flexbox' on a container */
+        /* 'container-item' is now a flex child of the parent container */
+        display: flex;
+    }
+</style>
+
+<!-- when aligning content, you can use the properties below to the parent to align the flex children -->
+<style>
+    .parent-container {
+        /* this is related to the horizontal */
+        flex-direction: row;
+        /* this is related to the vertical */
+        flex-direction: column;
+
+        /* these are the options for aligning the content on the x-axis */
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: space-around;
+        justify-content: space-between;
+        justify-content: space-evenly;
+
+        /* these are the options for aligning the content on the y-axis */
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: space-around;
+        align-items: space-between;
+        align-items: space-evenly;
+
+    }
+</style>
+
+</body>
+</html>
