@@ -1,4 +1,53 @@
-/* This is styling the H1 */
-.class1 {
-  color: "red";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__container {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  margin-top: 0;
+  padding: 20px;
+  color: white;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  padding-top: 12px;
+}
+
+.navbar__list a {
+  text-decoration: none;
+}
+
+.navbar__list-item {
+  margin-right: 10px;
+  color: white;
+}
+
+#contact {
+  color: red;
+}
+
+.about__container {
+  display: flex;
+}
+
+.about__left {
+  padding: 20px;
+}
+.about__left p {
+  max-width: 90%;
+}
+
+.about__right {
+  padding: 50px;
 }
